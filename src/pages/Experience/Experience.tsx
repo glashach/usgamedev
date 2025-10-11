@@ -8,14 +8,7 @@ export const Experience = () => {
       <h1 className="heading heading-xl experience__heading">Experience</h1>
       <ul className="experience__list">
         {experience.map(
-          ({
-            achievements,
-            companyLink,
-            project,
-            projectHref,
-            projectLink,
-            role,
-          }) => (
+          ({ achievements, companyLink, project, projectHref, role }) => (
             <li key={project} className="experience__item">
               <article className="experience__card">
                 <h2 className="heading heading-l experience__card-heading">
@@ -57,14 +50,14 @@ export const Experience = () => {
                     ))}
                   </div>
                 )} */}
-                {projectLink && (
+                {/* {projectLink && (
                   <Button
                     className="experience__card-button"
                     link={projectLink}
                   >
                     See more <span role="presentation">≫</span>
                   </Button>
-                )}
+                )} */}
                 {projectHref && (
                   <Button
                     className="experience__card-button"
