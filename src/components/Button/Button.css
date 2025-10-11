@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1.25px;
+  color: var(--text-color);
+  border: 0.0625rem solid var(--border-color);
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+
+  @media (--tablet) {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      90deg,
+      rgb(0, 45, 1) 50%,
+      rgb(0, 25, 1) 51%
+    );
+    background-size: 8px;
+    background-repeat: repeat;
+  }
+}
+
+.button--active {
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+
+  &:hover {
+    background-image: none;
+  }
+}

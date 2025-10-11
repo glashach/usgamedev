@@ -1,0 +1,68 @@
+.toxic-cola__heading-wrapper {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+
+  @media (--desktop-s) {
+    grid-column: span 4;
+  }
+
+  @media (--desktop-m) {
+    grid-column: span 6;
+  }
+
+  @media (--desktop-l) {
+    grid-column: span 8;
+  }
+
+  @media (--desktop-xl) {
+    grid-column: span 5;
+  }
+}
+
+.toxic-cola__heading {
+  margin-bottom: calc(2 * var(--gap));
+}
+
+.toxic-cola__heading-text {
+  margin-bottom: var(--gap);
+
+  @media (--desktop-m) {
+    max-width: 80%;
+  }
+}
+
+.toxic-cola__heading-button {
+  margin-bottom: var(--gap);
+
+  @media (--desktop-s) {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.toxic-cola__heading-video {
+  grid-column: 1 / -1;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+
+  @media (--desktop-s) {
+    grid-row: 1;
+    grid-column: 5 / span 4;
+  }
+
+  @media (--desktop-m) {
+    grid-column: 7 / span 6;
+  }
+
+  @media (--desktop-l) {
+    grid-column: 9 / span 8;
+    height: 480px;
+  }
+
+  @media (--desktop-xl) {
+    grid-column: 7 / span 7;
+  }
+}
