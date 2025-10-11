@@ -13,7 +13,7 @@ export const Contacts = () => {
           <Button href={extrenalLinks.linkedin}>Linkedin</Button>
         </li>
         <li>
-          <Button hash="mailto:slezavin.vladimir@gmail.com">Email</Button>
+          <Button hash="mailto:uladzimir.slezavin@gmail.com">Email</Button>
         </li>
         <li>
           <Button href="/assets/UladzimirSlezavin_LevelDesigner_CV.pdf">

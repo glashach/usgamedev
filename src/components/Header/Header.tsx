@@ -29,7 +29,7 @@ export const Header = () => {
           </li>
           <li>
             <Button
-              hash="mailto:slezavin.vladimir@gmail.com"
+              hash="mailto:uladzimir.slezavin@gmail.com"
               className="header__nav-link"
             >
               EMAIL
